@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":[["ClockMode","Clock Mode"]],"struct":[["SimulationClock","Simulation Clock"],["SimulationDateTime","Data Time of the Simulation"],["SimulationTimestamp","Fixed Timestamp"]]};
