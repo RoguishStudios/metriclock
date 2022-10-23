@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/lib.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>lib.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" href="../../normalize.css"><link rel="stylesheet" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" href="../../ayu.css" disabled><link rel="stylesheet" href="../../dark.css" disabled><link rel="stylesheet" href="../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../storage.js"></script><script defer src="../../source-script.js"></script><script defer src="../../source-files.js"></script><script defer src="../../main.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../metriclock/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../metriclock/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../metriclock/index.html"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/lib.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>lib.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../storage.js"></script><script defer src="../../source-script.js"></script><script defer src="../../source-files.js"></script><script defer src="../../main.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../metriclock/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../metriclock/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../metriclock/index.html"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -378,385 +378,385 @@
 <span id="378">378</span>
 <span id="379">379</span>
 <span id="380">380</span>
-</pre><pre class="rust"><code><span class="comment">//
-// Copyright 2020-2022 Hans W. Uhlig. All Rights Reserved.
-//
-// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-//
+</pre><pre class="rust"><code><span class="comment">//</span>
+<span class="comment">// Copyright 2020-2022 Hans W. Uhlig. All Rights Reserved.</span>
+<span class="comment">//</span>
+<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="comment">// you may not use this file except in compliance with the License.</span>
+<span class="comment">// You may obtain a copy of the License at</span>
+<span class="comment">//</span>
+<span class="comment">//      http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="comment">//</span>
+<span class="comment">// Unless required by applicable law or agreed to in writing, software</span>
+<span class="comment">// distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="comment">// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="comment">// See the License for the specific language governing permissions and</span>
+<span class="comment">// limitations under the License.</span>
+<span class="comment">//</span>
 
-</span><span class="doccomment">//! Turn Based Simulation Clock
-//!
-//! Taken From [Hendricksonian Metric Calendar](https://www.broadbandtechreport.com/home/article/16437240/time-for-a-metric-calendar)
-//!
-//! ## Uses Metric Time increments
-//! | Metric Time        | Metric Scale        | Scale      | Seconds                 | Imperial Duration                         |
-//! |--------------------|---------------------|------------|-------------------------|-------------------------------------------|
-//! | 1 Metric Millennia | 10 Metric Centuries | 1000       | 100,000,000,000 Seconds | 3170 yrs 51 wks 0 days 9 hr 46 min 40 sec |
-//! | 1 Metric Century   | 10 Metric Decades   | 100        | 10,000,000,000 Seconds  | 317 yrs 5 wks 0 days 17 hr 46 min 40 sec  |
-//! | 1 Metric Decade    | 10 Metric Years     | 10         | 1,000,000,000 Seconds   | 31 yrs 37 wks 0 days 1 hr 46 min 40 sec   |
-//! | 1 Metric Year      | 10 Metric Months    | 1          | 100,000,000 Seconds     | 3 yrs 8 wks 6 days 9 hr 46 min 40 sec     |
-//! | 1 Metric Month     | 10 Metric Weeks     | 0.1        | 10,000,000 Seconds      | 16 wks 3 days 17 hr 46 min 40 sec         |
-//! | 1 Metric Week      | 10 Metric Days      | 0.01       | 1,000,000 Seconds       | 1 wk 4 days 13 hr 46 min 40 sec           |
-//! | 1 Metric Day       | 10 Metric Hours     | 0.001      | 100,000 Seconds         | 1 day 3 hr 46 min 40 sec                  |
-//! | 1 Metric Hour      | 100 Metric Minutes  | 0.0001     | 10,000 Seconds          | 2 hr 46 min 40 sec                        |
-//! | 1 Metric Minute    | 100 Metric Seconds  | 0.000001   | 100 Seconds             | 1 Min 40 Sec                              |
-//! | 1 Metric Second    |                     | 0.00000001 | 1 Second                | 1 Second                                  |
-//!
+<span class="doccomment">//! Turn Based Simulation Clock</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! Taken From [Hendricksonian Metric Calendar](https://www.broadbandtechreport.com/home/article/16437240/time-for-a-metric-calendar)</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! ## Uses Metric Time increments</span>
+<span class="doccomment">//! | Metric Time        | Metric Scale        | Scale      | Seconds                 | Imperial Duration                         |</span>
+<span class="doccomment">//! |--------------------|---------------------|------------|-------------------------|-------------------------------------------|</span>
+<span class="doccomment">//! | 1 Metric Millennia | 10 Metric Centuries | 1000       | 100,000,000,000 Seconds | 3170 yrs 51 wks 0 days 9 hr 46 min 40 sec |</span>
+<span class="doccomment">//! | 1 Metric Century   | 10 Metric Decades   | 100        | 10,000,000,000 Seconds  | 317 yrs 5 wks 0 days 17 hr 46 min 40 sec  |</span>
+<span class="doccomment">//! | 1 Metric Decade    | 10 Metric Years     | 10         | 1,000,000,000 Seconds   | 31 yrs 37 wks 0 days 1 hr 46 min 40 sec   |</span>
+<span class="doccomment">//! | 1 Metric Year      | 10 Metric Months    | 1          | 100,000,000 Seconds     | 3 yrs 8 wks 6 days 9 hr 46 min 40 sec     |</span>
+<span class="doccomment">//! | 1 Metric Month     | 10 Metric Weeks     | 0.1        | 10,000,000 Seconds      | 16 wks 3 days 17 hr 46 min 40 sec         |</span>
+<span class="doccomment">//! | 1 Metric Week      | 10 Metric Days      | 0.01       | 1,000,000 Seconds       | 1 wk 4 days 13 hr 46 min 40 sec           |</span>
+<span class="doccomment">//! | 1 Metric Day       | 10 Metric Hours     | 0.001      | 100,000 Seconds         | 1 day 3 hr 46 min 40 sec                  |</span>
+<span class="doccomment">//! | 1 Metric Hour      | 100 Metric Minutes  | 0.0001     | 10,000 Seconds          | 2 hr 46 min 40 sec                        |</span>
+<span class="doccomment">//! | 1 Metric Minute    | 100 Metric Seconds  | 0.000001   | 100 Seconds             | 1 Min 40 Sec                              |</span>
+<span class="doccomment">//! | 1 Metric Second    |                     | 0.00000001 | 1 Second                | 1 Second                                  |</span>
+<span class="doccomment">//!</span>
 
-</span><span class="kw">use </span>serde::{Deserialize, Serialize};
-<span class="kw">use </span>std::time::Duration;
+<span class="kw">use</span> <span class="ident">serde</span>::{<span class="ident">Deserialize</span>, <span class="ident">Serialize</span>};
+<span class="kw">use</span> <span class="ident">std::time::Duration</span>;
 
-<span class="doccomment">/// Simulation Clock
-///
-/// ```rust
-/// use std::time::Duration;
-/// use metriclock::SimulationClock;
-///
-/// let mut clock = SimulationClock::default();
-///
-///clock.tick(Duration::from_micros(50));
-/// ```
-///
-</span><span class="attribute">#[derive(Clone, Serialize, Deserialize)]
-</span><span class="kw">pub struct </span>SimulationClock {
-    <span class="doccomment">/// Seconds since Simulation Epoch
-    </span>clock_time: Duration,
-    <span class="doccomment">/// Current Clock Mode
-    /// * TurnBased
-    /// * RealTime
-    </span>clock_mode: ClockMode,
-    <span class="doccomment">/// Clock Speed Multiplier
-    </span>clock_speed: f64,
-    <span class="doccomment">/// Duration of a Turn
-    </span>turn_duration: Duration,
-    <span class="doccomment">/// Duration remaining in this Turn
-    </span>turn_time_remaining: Duration,
+<span class="doccomment">/// Simulation Clock</span>
+<span class="doccomment">///</span>
+<span class="doccomment">/// ```rust</span>
+<span class="doccomment">/// use std::time::Duration;</span>
+<span class="doccomment">/// use metriclock::SimulationClock;</span>
+<span class="doccomment">///</span>
+<span class="doccomment">/// let mut clock = SimulationClock::default();</span>
+<span class="doccomment">///</span>
+<span class="doccomment">///clock.tick(Duration::from_micros(50));</span>
+<span class="doccomment">/// ```</span>
+<span class="doccomment">///</span>
+<span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">Serialize</span>, <span class="ident">Deserialize</span>)]</span>
+<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">SimulationClock</span> {
+    <span class="doccomment">/// Seconds since Simulation Epoch</span>
+    <span class="ident">clock_time</span>: <span class="ident">Duration</span>,
+    <span class="doccomment">/// Current Clock Mode</span>
+    <span class="doccomment">/// * TurnBased</span>
+    <span class="doccomment">/// * RealTime</span>
+    <span class="ident">clock_mode</span>: <span class="ident">ClockMode</span>,
+    <span class="doccomment">/// Clock Speed Multiplier</span>
+    <span class="ident">clock_speed</span>: <span class="ident">f64</span>,
+    <span class="doccomment">/// Duration of a Turn</span>
+    <span class="ident">turn_duration</span>: <span class="ident">Duration</span>,
+    <span class="doccomment">/// Duration remaining in this Turn</span>
+    <span class="ident">turn_time_remaining</span>: <span class="ident">Duration</span>,
 }
 
-<span class="doccomment">/// Clock Mode
-</span><span class="attribute">#[derive(Copy, Clone, Debug, Serialize, Deserialize, Ord, PartialOrd, Eq, PartialEq)]
-</span><span class="kw">pub enum </span>ClockMode {
-    <span class="doccomment">/// Turn-Based Clock
-    </span>TurnBased,
-    <span class="doccomment">/// Real-Time Clock
-    </span>RealTime,
+<span class="doccomment">/// Clock Mode</span>
+<span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Copy</span>, <span class="ident">Clone</span>, <span class="ident">Debug</span>, <span class="ident">Serialize</span>, <span class="ident">Deserialize</span>, <span class="ident">Ord</span>, <span class="ident">PartialOrd</span>, <span class="ident">Eq</span>, <span class="ident">PartialEq</span>)]</span>
+<span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">ClockMode</span> {
+    <span class="doccomment">/// Turn-Based Clock</span>
+    <span class="ident">TurnBased</span>,
+    <span class="doccomment">/// Real-Time Clock</span>
+    <span class="ident">RealTime</span>,
 }
 
-<span class="kw">impl </span>SimulationClock {
-    <span class="doccomment">/// Create a new Simulation Clock starting at `origin` seconds.
-    </span><span class="kw">pub fn </span>from_seconds(epoch_seconds: u64) -&gt; SimulationClock {
-        SimulationClock {
-            clock_time: Duration::from_secs(epoch_seconds),
-            clock_mode: ClockMode::RealTime,
-            clock_speed: <span class="number">0.0</span>,
-            turn_duration: Duration::from_secs_f64(<span class="number">3.0</span>),
-            turn_time_remaining: Default::default(),
+<span class="kw">impl</span> <span class="ident">SimulationClock</span> {
+    <span class="doccomment">/// Create a new Simulation Clock starting at `origin` seconds.</span>
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">from_seconds</span>(<span class="ident">epoch_seconds</span>: <span class="ident">u64</span>) -&gt; <span class="ident">SimulationClock</span> {
+        <span class="ident">SimulationClock</span> {
+            <span class="ident">clock_time</span>: <span class="ident">Duration::from_secs</span>(<span class="ident">epoch_seconds</span>),
+            <span class="ident">clock_mode</span>: <span class="ident">ClockMode::RealTime</span>,
+            <span class="ident">clock_speed</span>: <span class="number">0.0</span>,
+            <span class="ident">turn_duration</span>: <span class="ident">Duration::from_secs_f64</span>(<span class="number">3.0</span>),
+            <span class="ident">turn_time_remaining</span>: <span class="ident">Default::default</span>(),
         }
     }
-    <span class="doccomment">///
-    </span><span class="kw">pub fn </span>from_metric_timestamp(
-        year: u64,
-        month: u64,
-        week: u64,
-        day: u64,
-        hour: u64,
-        minute: u64,
-        second: u64,
-    ) -&gt; SimulationClock {
-        <span class="kw">let </span><span class="kw-2">mut </span>epoch_seconds = <span class="number">0</span>;
-        epoch_seconds += year * <span class="number">100_000_000</span>;
-        epoch_seconds += month * <span class="number">10_000_000</span>;
-        epoch_seconds += week * <span class="number">1_000_000</span>;
-        epoch_seconds += day * <span class="number">100_000</span>;
-        epoch_seconds += hour * <span class="number">10_000</span>;
-        epoch_seconds += minute * <span class="number">100</span>;
-        epoch_seconds += second * <span class="number">1</span>;
-        <span class="kw">let </span>clock_time = Duration::from_secs(epoch_seconds);
-        <span class="self">Self </span>{
-            clock_time,
-            ..Default::default()
+    <span class="doccomment">///</span>
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">from_metric_timestamp</span>(
+        <span class="ident">year</span>: <span class="ident">u64</span>,
+        <span class="ident">month</span>: <span class="ident">u64</span>,
+        <span class="ident">week</span>: <span class="ident">u64</span>,
+        <span class="ident">day</span>: <span class="ident">u64</span>,
+        <span class="ident">hour</span>: <span class="ident">u64</span>,
+        <span class="ident">minute</span>: <span class="ident">u64</span>,
+        <span class="ident">second</span>: <span class="ident">u64</span>,
+    ) -&gt; <span class="ident">SimulationClock</span> {
+        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">epoch_seconds</span> <span class="op">=</span> <span class="number">0</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">year</span> <span class="op">*</span> <span class="number">100_000_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">month</span> <span class="op">*</span> <span class="number">10_000_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">week</span> <span class="op">*</span> <span class="number">1_000_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">day</span> <span class="op">*</span> <span class="number">100_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">hour</span> <span class="op">*</span> <span class="number">10_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">minute</span> <span class="op">*</span> <span class="number">100</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">second</span> <span class="op">*</span> <span class="number">1</span>;
+        <span class="kw">let</span> <span class="ident">clock_time</span> <span class="op">=</span> <span class="ident">Duration::from_secs</span>(<span class="ident">epoch_seconds</span>);
+        <span class="self">Self</span> {
+            <span class="ident">clock_time</span>,
+            ..<span class="ident">Default::default</span>()
         }
     }
-    <span class="kw">pub fn </span>current_timestamp(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; SimulationTimestamp {
-        SimulationTimestamp::from(<span class="self">self</span>.clock_time.clone())
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">current_timestamp</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <span class="ident">SimulationTimestamp</span> {
+        <span class="ident">SimulationTimestamp::from</span>(<span class="self">self</span>.<span class="ident">clock_time</span>.<span class="ident">clone</span>())
     }
-    <span class="kw">pub fn </span>current_datetime(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; SimulationDateTime {
-        SimulationDateTime::from(<span class="self">self</span>.clock_time.clone())
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">current_datetime</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <span class="ident">SimulationDateTime</span> {
+        <span class="ident">SimulationDateTime::from</span>(<span class="self">self</span>.<span class="ident">clock_time</span>.<span class="ident">clone</span>())
     }
-    <span class="kw">pub fn </span>current_epoch_seconds(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; f64 {
-        <span class="self">self</span>.clock_time.as_secs_f64()
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">current_epoch_seconds</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <span class="ident">f64</span> {
+        <span class="self">self</span>.<span class="ident">clock_time</span>.<span class="ident">as_secs_f64</span>()
     }
-    <span class="kw">pub fn </span>clock_speed(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; f64 {
-        <span class="self">self</span>.clock_speed
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">clock_speed</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <span class="ident">f64</span> {
+        <span class="self">self</span>.<span class="ident">clock_speed</span>
     }
-    <span class="kw">pub fn </span>set_clock_speed(<span class="kw-2">&amp;mut </span><span class="self">self</span>, speed: f64) {
-        <span class="self">self</span>.clock_speed = speed;
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">set_clock_speed</span>(<span class="kw-2">&amp;mut</span> <span class="self">self</span>, <span class="ident">speed</span>: <span class="ident">f64</span>) {
+        <span class="self">self</span>.<span class="ident">clock_speed</span> <span class="op">=</span> <span class="ident">speed</span>;
     }
-    <span class="kw">pub fn </span>enable_turn_mode(<span class="kw-2">&amp;mut </span><span class="self">self</span>) {
-        <span class="kw">if </span><span class="self">self</span>.clock_mode == ClockMode::RealTime {
-            <span class="self">self</span>.clock_mode = ClockMode::TurnBased;
-            <span class="self">self</span>.turn_time_remaining = <span class="self">self</span>.turn_duration.clone();
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">enable_turn_mode</span>(<span class="kw-2">&amp;mut</span> <span class="self">self</span>) {
+        <span class="kw">if</span> <span class="self">self</span>.<span class="ident">clock_mode</span> <span class="op">==</span> <span class="ident">ClockMode::RealTime</span> {
+            <span class="self">self</span>.<span class="ident">clock_mode</span> <span class="op">=</span> <span class="ident">ClockMode::TurnBased</span>;
+            <span class="self">self</span>.<span class="ident">turn_time_remaining</span> <span class="op">=</span> <span class="self">self</span>.<span class="ident">turn_duration</span>.<span class="ident">clone</span>();
         }
     }
-    <span class="kw">pub fn </span>turn_complete(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; bool {
-        <span class="self">self</span>.turn_time_remaining.is_zero()
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">turn_complete</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <span class="ident">bool</span> {
+        <span class="self">self</span>.<span class="ident">turn_time_remaining</span>.<span class="ident">is_zero</span>()
     }
-    <span class="kw">pub fn </span>advance_turn(<span class="kw-2">&amp;mut </span><span class="self">self</span>) {
-        <span class="kw">if </span><span class="self">self</span>.clock_mode == ClockMode::TurnBased
-            &amp;&amp; <span class="self">self</span>.turn_time_remaining == Duration::default()
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">advance_turn</span>(<span class="kw-2">&amp;mut</span> <span class="self">self</span>) {
+        <span class="kw">if</span> <span class="self">self</span>.<span class="ident">clock_mode</span> <span class="op">==</span> <span class="ident">ClockMode::TurnBased</span>
+            <span class="op">&amp;&amp;</span> <span class="self">self</span>.<span class="ident">turn_time_remaining</span> <span class="op">==</span> <span class="ident">Duration::default</span>()
         {
-            <span class="self">self</span>.turn_time_remaining = <span class="self">self</span>.turn_duration.clone();
+            <span class="self">self</span>.<span class="ident">turn_time_remaining</span> <span class="op">=</span> <span class="self">self</span>.<span class="ident">turn_duration</span>.<span class="ident">clone</span>();
         }
     }
-    <span class="kw">pub fn </span>disable_turn_mode(<span class="kw-2">&amp;mut </span><span class="self">self</span>) {
-        <span class="kw">if </span><span class="self">self</span>.clock_mode == ClockMode::TurnBased {
-            <span class="self">self</span>.clock_mode = ClockMode::RealTime;
-            <span class="self">self</span>.turn_time_remaining = Duration::default();
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">disable_turn_mode</span>(<span class="kw-2">&amp;mut</span> <span class="self">self</span>) {
+        <span class="kw">if</span> <span class="self">self</span>.<span class="ident">clock_mode</span> <span class="op">==</span> <span class="ident">ClockMode::TurnBased</span> {
+            <span class="self">self</span>.<span class="ident">clock_mode</span> <span class="op">=</span> <span class="ident">ClockMode::RealTime</span>;
+            <span class="self">self</span>.<span class="ident">turn_time_remaining</span> <span class="op">=</span> <span class="ident">Duration::default</span>();
         }
     }
-    <span class="kw">pub fn </span>tick(<span class="kw-2">&amp;mut </span><span class="self">self</span>, delta: Duration) {
-        <span class="kw">let </span>delta = delta.mul_f64(<span class="self">self</span>.clock_speed.into());
-        <span class="kw">match </span><span class="self">self</span>.clock_mode {
-            ClockMode::RealTime =&gt; {
-                <span class="self">self</span>.clock_time += delta;
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">tick</span>(<span class="kw-2">&amp;mut</span> <span class="self">self</span>, <span class="ident">delta</span>: <span class="ident">Duration</span>) {
+        <span class="kw">let</span> <span class="ident">delta</span> <span class="op">=</span> <span class="ident">delta</span>.<span class="ident">mul_f64</span>(<span class="self">self</span>.<span class="ident">clock_speed</span>.<span class="ident">into</span>());
+        <span class="kw">match</span> <span class="self">self</span>.<span class="ident">clock_mode</span> {
+            <span class="ident">ClockMode::RealTime</span> =&gt; {
+                <span class="self">self</span>.<span class="ident">clock_time</span> <span class="op">+</span><span class="op">=</span> <span class="ident">delta</span>;
             }
-            ClockMode::TurnBased =&gt; {
-                <span class="kw">if </span>!<span class="self">self</span>.turn_time_remaining.is_zero() {
-                    <span class="self">self</span>.turn_time_remaining = <span class="self">self</span>.turn_time_remaining.saturating_sub(delta);
-                    <span class="self">self</span>.clock_time += delta;
+            <span class="ident">ClockMode::TurnBased</span> =&gt; {
+                <span class="kw">if</span> <span class="op">!</span><span class="self">self</span>.<span class="ident">turn_time_remaining</span>.<span class="ident">is_zero</span>() {
+                    <span class="self">self</span>.<span class="ident">turn_time_remaining</span> <span class="op">=</span> <span class="self">self</span>.<span class="ident">turn_time_remaining</span>.<span class="ident">saturating_sub</span>(<span class="ident">delta</span>);
+                    <span class="self">self</span>.<span class="ident">clock_time</span> <span class="op">+</span><span class="op">=</span> <span class="ident">delta</span>;
                 }
             }
         }
     }
 }
 
-<span class="kw">impl </span>Default <span class="kw">for </span>SimulationClock {
-    <span class="kw">fn </span>default() -&gt; SimulationClock {
-        SimulationClock {
-            clock_time: Default::default(),
-            clock_mode: ClockMode::RealTime,
-            clock_speed: <span class="number">1.0</span>,
-            turn_duration: Duration::from_secs(<span class="number">6</span>),
-            turn_time_remaining: Duration::default(),
+<span class="kw">impl</span> <span class="ident">Default</span> <span class="kw">for</span> <span class="ident">SimulationClock</span> {
+    <span class="kw">fn</span> <span class="ident">default</span>() -&gt; <span class="ident">SimulationClock</span> {
+        <span class="ident">SimulationClock</span> {
+            <span class="ident">clock_time</span>: <span class="ident">Default::default</span>(),
+            <span class="ident">clock_mode</span>: <span class="ident">ClockMode::RealTime</span>,
+            <span class="ident">clock_speed</span>: <span class="number">1.0</span>,
+            <span class="ident">turn_duration</span>: <span class="ident">Duration::from_secs</span>(<span class="number">6</span>),
+            <span class="ident">turn_time_remaining</span>: <span class="ident">Duration::default</span>(),
         }
     }
 }
 
-<span class="kw">impl </span>std::fmt::Debug <span class="kw">for </span>SimulationClock {
-    <span class="kw">fn </span>fmt(<span class="kw-2">&amp;</span><span class="self">self</span>, f: <span class="kw-2">&amp;mut </span>std::fmt::Formatter&lt;<span class="lifetime">&#39;_</span>&gt;) -&gt; std::fmt::Result {
-        f.debug_struct(<span class="string">&quot;SimulationClock&quot;</span>)
-            .field(<span class="string">&quot;clock_epoch_seconds&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.current_epoch_seconds())
-            .field(<span class="string">&quot;clock_timestamp&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.current_timestamp())
-            .field(<span class="string">&quot;clock_datetime&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.current_datetime())
-            .field(<span class="string">&quot;clock_speed&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.clock_speed)
-            .field(<span class="string">&quot;clock_state&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.clock_mode)
-            .field(<span class="string">&quot;turn_time&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.turn_duration)
-            .field(<span class="string">&quot;turn_remaining&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.turn_time_remaining)
-            .finish()
+<span class="kw">impl</span> <span class="ident">std::fmt::Debug</span> <span class="kw">for</span> <span class="ident">SimulationClock</span> {
+    <span class="kw">fn</span> <span class="ident">fmt</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">f</span>: <span class="kw-2">&amp;mut</span> <span class="ident">std::fmt::Formatter</span><span class="op">&lt;</span><span class="lifetime">&#39;_</span><span class="op">&gt;</span>) -&gt; <span class="ident">std::fmt::Result</span> {
+        <span class="ident">f</span>.<span class="ident">debug_struct</span>(<span class="string">&quot;SimulationClock&quot;</span>)
+            .<span class="ident">field</span>(<span class="string">&quot;clock_epoch_seconds&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">current_epoch_seconds</span>())
+            .<span class="ident">field</span>(<span class="string">&quot;clock_timestamp&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">current_timestamp</span>())
+            .<span class="ident">field</span>(<span class="string">&quot;clock_datetime&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">current_datetime</span>())
+            .<span class="ident">field</span>(<span class="string">&quot;clock_speed&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">clock_speed</span>)
+            .<span class="ident">field</span>(<span class="string">&quot;clock_state&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">clock_mode</span>)
+            .<span class="ident">field</span>(<span class="string">&quot;turn_time&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">turn_duration</span>)
+            .<span class="ident">field</span>(<span class="string">&quot;turn_remaining&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">turn_time_remaining</span>)
+            .<span class="ident">finish</span>()
     }
 }
 
-<span class="doccomment">/// Fixed Timestamp
-</span><span class="attribute">#[derive(Clone, Serialize, Deserialize)]
-</span><span class="kw">pub struct </span>SimulationTimestamp(Duration);
+<span class="doccomment">/// Fixed Timestamp</span>
+<span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">Serialize</span>, <span class="ident">Deserialize</span>)]</span>
+<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">SimulationTimestamp</span>(<span class="ident">Duration</span>);
 
-<span class="kw">impl </span>SimulationTimestamp {
-    <span class="kw">pub fn </span>from_epoch_seconds(epoch_seconds: u64) -&gt; SimulationTimestamp {
-        <span class="self">Self</span>(Duration::from_secs(epoch_seconds))
+<span class="kw">impl</span> <span class="ident">SimulationTimestamp</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">from_epoch_seconds</span>(<span class="ident">epoch_seconds</span>: <span class="ident">u64</span>) -&gt; <span class="ident">SimulationTimestamp</span> {
+        <span class="self">Self</span>(<span class="ident">Duration::from_secs</span>(<span class="ident">epoch_seconds</span>))
     }
-    <span class="kw">pub fn </span>from_components(
-        year: u32,
-        month: u8,
-        week: u8,
-        day: u8,
-        hour: u8,
-        minute: u8,
-        second: u8,
-    ) -&gt; SimulationTimestamp {
-        <span class="kw">let </span><span class="kw-2">mut </span>epoch_seconds = <span class="number">0.0</span>;
-        epoch_seconds += year <span class="kw">as </span>f64 * <span class="number">100_000_000.0</span>;
-        epoch_seconds += month <span class="kw">as </span>f64 * <span class="number">10_000_000.0</span>;
-        epoch_seconds += week <span class="kw">as </span>f64 * <span class="number">1_000_000.0</span>;
-        epoch_seconds += day <span class="kw">as </span>f64 * <span class="number">100_000.0</span>;
-        epoch_seconds += hour <span class="kw">as </span>f64 * <span class="number">10_000.0</span>;
-        epoch_seconds += minute <span class="kw">as </span>f64 * <span class="number">100.0</span>;
-        epoch_seconds += second <span class="kw">as </span>f64 * <span class="number">1.0</span>;
-        <span class="self">Self</span>(Duration::from_secs_f64(epoch_seconds))
-    }
-}
-
-<span class="kw">impl </span>From&lt;Duration&gt; <span class="kw">for </span>SimulationTimestamp {
-    <span class="kw">fn </span>from(duration: Duration) -&gt; <span class="self">Self </span>{
-        SimulationTimestamp(duration)
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">from_components</span>(
+        <span class="ident">year</span>: <span class="ident">u32</span>,
+        <span class="ident">month</span>: <span class="ident">u8</span>,
+        <span class="ident">week</span>: <span class="ident">u8</span>,
+        <span class="ident">day</span>: <span class="ident">u8</span>,
+        <span class="ident">hour</span>: <span class="ident">u8</span>,
+        <span class="ident">minute</span>: <span class="ident">u8</span>,
+        <span class="ident">second</span>: <span class="ident">u8</span>,
+    ) -&gt; <span class="ident">SimulationTimestamp</span> {
+        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">epoch_seconds</span> <span class="op">=</span> <span class="number">0.0</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">year</span> <span class="kw">as</span> <span class="ident">f64</span> <span class="op">*</span> <span class="number">100_000_000.0</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">month</span> <span class="kw">as</span> <span class="ident">f64</span> <span class="op">*</span> <span class="number">10_000_000.0</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">week</span> <span class="kw">as</span> <span class="ident">f64</span> <span class="op">*</span> <span class="number">1_000_000.0</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">day</span> <span class="kw">as</span> <span class="ident">f64</span> <span class="op">*</span> <span class="number">100_000.0</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">hour</span> <span class="kw">as</span> <span class="ident">f64</span> <span class="op">*</span> <span class="number">10_000.0</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">minute</span> <span class="kw">as</span> <span class="ident">f64</span> <span class="op">*</span> <span class="number">100.0</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">second</span> <span class="kw">as</span> <span class="ident">f64</span> <span class="op">*</span> <span class="number">1.0</span>;
+        <span class="self">Self</span>(<span class="ident">Duration::from_secs_f64</span>(<span class="ident">epoch_seconds</span>))
     }
 }
 
-<span class="kw">impl </span>From&lt;SimulationDateTime&gt; <span class="kw">for </span>SimulationTimestamp {
-    <span class="kw">fn </span>from(datetime: SimulationDateTime) -&gt; <span class="self">Self </span>{
-        <span class="kw">let </span><span class="kw-2">mut </span>epoch_seconds = <span class="number">0</span>;
-        epoch_seconds += datetime.year <span class="kw">as </span>u64 * <span class="number">100_000_000</span>;
-        epoch_seconds += datetime.month <span class="kw">as </span>u64 * <span class="number">10_000_000</span>;
-        epoch_seconds += datetime.week <span class="kw">as </span>u64 * <span class="number">1_000_000</span>;
-        epoch_seconds += datetime.day <span class="kw">as </span>u64 * <span class="number">100_000</span>;
-        epoch_seconds += datetime.hour <span class="kw">as </span>u64 * <span class="number">10_000</span>;
-        epoch_seconds += datetime.minute <span class="kw">as </span>u64 * <span class="number">100</span>;
-        epoch_seconds += datetime.second <span class="kw">as </span>u64 * <span class="number">1</span>;
-        <span class="self">Self</span>(Duration::from_secs(epoch_seconds <span class="kw">as </span>u64))
+<span class="kw">impl</span> <span class="ident">From</span><span class="op">&lt;</span><span class="ident">Duration</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">SimulationTimestamp</span> {
+    <span class="kw">fn</span> <span class="ident">from</span>(<span class="ident">duration</span>: <span class="ident">Duration</span>) -&gt; <span class="self">Self</span> {
+        <span class="ident">SimulationTimestamp</span>(<span class="ident">duration</span>)
     }
 }
 
-<span class="kw">impl </span>std::fmt::Debug <span class="kw">for </span>SimulationTimestamp {
-    <span class="kw">fn </span>fmt(<span class="kw-2">&amp;</span><span class="self">self</span>, f: <span class="kw-2">&amp;mut </span>std::fmt::Formatter&lt;<span class="lifetime">&#39;_</span>&gt;) -&gt; std::fmt::Result {
-        f.debug_struct(<span class="string">&quot;SimulationTimestamp&quot;</span>)
-            .field(<span class="string">&quot;epoch_seconds&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="number">0</span>.as_secs())
-            .finish()
+<span class="kw">impl</span> <span class="ident">From</span><span class="op">&lt;</span><span class="ident">SimulationDateTime</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">SimulationTimestamp</span> {
+    <span class="kw">fn</span> <span class="ident">from</span>(<span class="ident">datetime</span>: <span class="ident">SimulationDateTime</span>) -&gt; <span class="self">Self</span> {
+        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">epoch_seconds</span> <span class="op">=</span> <span class="number">0</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">datetime</span>.<span class="ident">year</span> <span class="kw">as</span> <span class="ident">u64</span> <span class="op">*</span> <span class="number">100_000_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">datetime</span>.<span class="ident">month</span> <span class="kw">as</span> <span class="ident">u64</span> <span class="op">*</span> <span class="number">10_000_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">datetime</span>.<span class="ident">week</span> <span class="kw">as</span> <span class="ident">u64</span> <span class="op">*</span> <span class="number">1_000_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">datetime</span>.<span class="ident">day</span> <span class="kw">as</span> <span class="ident">u64</span> <span class="op">*</span> <span class="number">100_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">datetime</span>.<span class="ident">hour</span> <span class="kw">as</span> <span class="ident">u64</span> <span class="op">*</span> <span class="number">10_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">datetime</span>.<span class="ident">minute</span> <span class="kw">as</span> <span class="ident">u64</span> <span class="op">*</span> <span class="number">100</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">+</span><span class="op">=</span> <span class="ident">datetime</span>.<span class="ident">second</span> <span class="kw">as</span> <span class="ident">u64</span> <span class="op">*</span> <span class="number">1</span>;
+        <span class="self">Self</span>(<span class="ident">Duration::from_secs</span>(<span class="ident">epoch_seconds</span> <span class="kw">as</span> <span class="ident">u64</span>))
     }
 }
 
-<span class="kw">impl </span>std::fmt::Display <span class="kw">for </span>SimulationTimestamp {
-    <span class="kw">fn </span>fmt(<span class="kw-2">&amp;</span><span class="self">self</span>, f: <span class="kw-2">&amp;mut </span>std::fmt::Formatter&lt;<span class="lifetime">&#39;_</span>&gt;) -&gt; std::fmt::Result {
-        <span class="macro">write!</span>(f, <span class="string">&quot;{}&quot;</span>, <span class="self">self</span>.<span class="number">0</span>.as_secs_f64())
+<span class="kw">impl</span> <span class="ident">std::fmt::Debug</span> <span class="kw">for</span> <span class="ident">SimulationTimestamp</span> {
+    <span class="kw">fn</span> <span class="ident">fmt</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">f</span>: <span class="kw-2">&amp;mut</span> <span class="ident">std::fmt::Formatter</span><span class="op">&lt;</span><span class="lifetime">&#39;_</span><span class="op">&gt;</span>) -&gt; <span class="ident">std::fmt::Result</span> {
+        <span class="ident">f</span>.<span class="ident">debug_struct</span>(<span class="string">&quot;SimulationTimestamp&quot;</span>)
+            .<span class="ident">field</span>(<span class="string">&quot;epoch_seconds&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="number">0</span>.<span class="ident">as_secs</span>())
+            .<span class="ident">finish</span>()
     }
 }
 
-<span class="doccomment">/// Data Time of the Simulation
-</span><span class="kw">pub struct </span>SimulationDateTime {
-    <span class="kw">pub </span>year: u32,
-    <span class="kw">pub </span>month: u8,
-    <span class="kw">pub </span>week: u8,
-    <span class="kw">pub </span>day: u8,
-    <span class="kw">pub </span>hour: u8,
-    <span class="kw">pub </span>minute: u8,
-    <span class="kw">pub </span>second: u8,
+<span class="kw">impl</span> <span class="ident">std::fmt::Display</span> <span class="kw">for</span> <span class="ident">SimulationTimestamp</span> {
+    <span class="kw">fn</span> <span class="ident">fmt</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">f</span>: <span class="kw-2">&amp;mut</span> <span class="ident">std::fmt::Formatter</span><span class="op">&lt;</span><span class="lifetime">&#39;_</span><span class="op">&gt;</span>) -&gt; <span class="ident">std::fmt::Result</span> {
+        <span class="macro">write!</span>(<span class="ident">f</span>, <span class="string">&quot;{}&quot;</span>, <span class="self">self</span>.<span class="number">0</span>.<span class="ident">as_secs_f64</span>())
+    }
 }
 
-<span class="kw">impl </span>SimulationDateTime {
-    <span class="kw">pub fn </span>from_epoch_seconds(epoch_seconds: u64) -&gt; <span class="self">Self </span>{
-        <span class="kw">let </span><span class="kw-2">mut </span>epoch_seconds = epoch_seconds;
-        <span class="kw">let </span>year = epoch_seconds / <span class="number">100_000_000</span>;
-        epoch_seconds -= year * <span class="number">100_000_000</span>;
-        <span class="kw">let </span>month = epoch_seconds / <span class="number">10_000_000</span>;
-        epoch_seconds -= month * <span class="number">10_000_000</span>;
-        <span class="kw">let </span>week = epoch_seconds / <span class="number">1_000_000</span>;
-        epoch_seconds -= week * <span class="number">1_000_000</span>;
-        <span class="kw">let </span>day = epoch_seconds / <span class="number">100_000</span>;
-        epoch_seconds -= day * <span class="number">100_000</span>;
-        <span class="kw">let </span>hour = epoch_seconds / <span class="number">10_000</span>;
-        epoch_seconds -= hour * <span class="number">10_000</span>;
-        <span class="kw">let </span>minute = epoch_seconds / <span class="number">100</span>;
-        epoch_seconds -= minute * <span class="number">100</span>;
-        <span class="kw">let </span>second = epoch_seconds;
-        <span class="self">Self </span>{
-            year: year <span class="kw">as </span>u32,
-            month: month <span class="kw">as </span>u8,
-            week: week <span class="kw">as </span>u8,
-            day: day <span class="kw">as </span>u8,
-            hour: hour <span class="kw">as </span>u8,
-            minute: minute <span class="kw">as </span>u8,
-            second: second <span class="kw">as </span>u8,
+<span class="doccomment">/// Data Time of the Simulation</span>
+<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">SimulationDateTime</span> {
+    <span class="kw">pub</span> <span class="ident">year</span>: <span class="ident">u32</span>,
+    <span class="kw">pub</span> <span class="ident">month</span>: <span class="ident">u8</span>,
+    <span class="kw">pub</span> <span class="ident">week</span>: <span class="ident">u8</span>,
+    <span class="kw">pub</span> <span class="ident">day</span>: <span class="ident">u8</span>,
+    <span class="kw">pub</span> <span class="ident">hour</span>: <span class="ident">u8</span>,
+    <span class="kw">pub</span> <span class="ident">minute</span>: <span class="ident">u8</span>,
+    <span class="kw">pub</span> <span class="ident">second</span>: <span class="ident">u8</span>,
+}
+
+<span class="kw">impl</span> <span class="ident">SimulationDateTime</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">from_epoch_seconds</span>(<span class="ident">epoch_seconds</span>: <span class="ident">u64</span>) -&gt; <span class="self">Self</span> {
+        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">epoch_seconds</span> <span class="op">=</span> <span class="ident">epoch_seconds</span>;
+        <span class="kw">let</span> <span class="ident">year</span> <span class="op">=</span> <span class="ident">epoch_seconds</span> <span class="op">/</span> <span class="number">100_000_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">-</span><span class="op">=</span> <span class="ident">year</span> <span class="op">*</span> <span class="number">100_000_000</span>;
+        <span class="kw">let</span> <span class="ident">month</span> <span class="op">=</span> <span class="ident">epoch_seconds</span> <span class="op">/</span> <span class="number">10_000_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">-</span><span class="op">=</span> <span class="ident">month</span> <span class="op">*</span> <span class="number">10_000_000</span>;
+        <span class="kw">let</span> <span class="ident">week</span> <span class="op">=</span> <span class="ident">epoch_seconds</span> <span class="op">/</span> <span class="number">1_000_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">-</span><span class="op">=</span> <span class="ident">week</span> <span class="op">*</span> <span class="number">1_000_000</span>;
+        <span class="kw">let</span> <span class="ident">day</span> <span class="op">=</span> <span class="ident">epoch_seconds</span> <span class="op">/</span> <span class="number">100_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">-</span><span class="op">=</span> <span class="ident">day</span> <span class="op">*</span> <span class="number">100_000</span>;
+        <span class="kw">let</span> <span class="ident">hour</span> <span class="op">=</span> <span class="ident">epoch_seconds</span> <span class="op">/</span> <span class="number">10_000</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">-</span><span class="op">=</span> <span class="ident">hour</span> <span class="op">*</span> <span class="number">10_000</span>;
+        <span class="kw">let</span> <span class="ident">minute</span> <span class="op">=</span> <span class="ident">epoch_seconds</span> <span class="op">/</span> <span class="number">100</span>;
+        <span class="ident">epoch_seconds</span> <span class="op">-</span><span class="op">=</span> <span class="ident">minute</span> <span class="op">*</span> <span class="number">100</span>;
+        <span class="kw">let</span> <span class="ident">second</span> <span class="op">=</span> <span class="ident">epoch_seconds</span>;
+        <span class="self">Self</span> {
+            <span class="ident">year</span>: <span class="ident">year</span> <span class="kw">as</span> <span class="ident">u32</span>,
+            <span class="ident">month</span>: <span class="ident">month</span> <span class="kw">as</span> <span class="ident">u8</span>,
+            <span class="ident">week</span>: <span class="ident">week</span> <span class="kw">as</span> <span class="ident">u8</span>,
+            <span class="ident">day</span>: <span class="ident">day</span> <span class="kw">as</span> <span class="ident">u8</span>,
+            <span class="ident">hour</span>: <span class="ident">hour</span> <span class="kw">as</span> <span class="ident">u8</span>,
+            <span class="ident">minute</span>: <span class="ident">minute</span> <span class="kw">as</span> <span class="ident">u8</span>,
+            <span class="ident">second</span>: <span class="ident">second</span> <span class="kw">as</span> <span class="ident">u8</span>,
         }
     }
-    <span class="kw">pub fn </span>from_components(
-        year: u32,
-        month: u8,
-        week: u8,
-        day: u8,
-        hour: u8,
-        minute: u8,
-        second: u8,
-    ) -&gt; SimulationDateTime {
-        SimulationDateTime {
-            year,
-            month,
-            week,
-            day,
-            hour,
-            minute,
-            second,
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">from_components</span>(
+        <span class="ident">year</span>: <span class="ident">u32</span>,
+        <span class="ident">month</span>: <span class="ident">u8</span>,
+        <span class="ident">week</span>: <span class="ident">u8</span>,
+        <span class="ident">day</span>: <span class="ident">u8</span>,
+        <span class="ident">hour</span>: <span class="ident">u8</span>,
+        <span class="ident">minute</span>: <span class="ident">u8</span>,
+        <span class="ident">second</span>: <span class="ident">u8</span>,
+    ) -&gt; <span class="ident">SimulationDateTime</span> {
+        <span class="ident">SimulationDateTime</span> {
+            <span class="ident">year</span>,
+            <span class="ident">month</span>,
+            <span class="ident">week</span>,
+            <span class="ident">day</span>,
+            <span class="ident">hour</span>,
+            <span class="ident">minute</span>,
+            <span class="ident">second</span>,
         }
     }
 }
 
-<span class="kw">impl </span>From&lt;Duration&gt; <span class="kw">for </span>SimulationDateTime {
-    <span class="kw">fn </span>from(duration: Duration) -&gt; <span class="self">Self </span>{
-        SimulationDateTime::from_epoch_seconds(duration.as_secs())
+<span class="kw">impl</span> <span class="ident">From</span><span class="op">&lt;</span><span class="ident">Duration</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">SimulationDateTime</span> {
+    <span class="kw">fn</span> <span class="ident">from</span>(<span class="ident">duration</span>: <span class="ident">Duration</span>) -&gt; <span class="self">Self</span> {
+        <span class="ident">SimulationDateTime::from_epoch_seconds</span>(<span class="ident">duration</span>.<span class="ident">as_secs</span>())
     }
 }
 
-<span class="kw">impl </span>From&lt;SimulationTimestamp&gt; <span class="kw">for </span>SimulationDateTime {
-    <span class="kw">fn </span>from(timestamp: SimulationTimestamp) -&gt; <span class="self">Self </span>{
-        SimulationDateTime::from_epoch_seconds(timestamp.<span class="number">0</span>.as_secs())
+<span class="kw">impl</span> <span class="ident">From</span><span class="op">&lt;</span><span class="ident">SimulationTimestamp</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">SimulationDateTime</span> {
+    <span class="kw">fn</span> <span class="ident">from</span>(<span class="ident">timestamp</span>: <span class="ident">SimulationTimestamp</span>) -&gt; <span class="self">Self</span> {
+        <span class="ident">SimulationDateTime::from_epoch_seconds</span>(<span class="ident">timestamp</span>.<span class="number">0</span>.<span class="ident">as_secs</span>())
     }
 }
 
-<span class="kw">impl </span>std::fmt::Display <span class="kw">for </span>SimulationDateTime {
-    <span class="kw">fn </span>fmt(<span class="kw-2">&amp;</span><span class="self">self</span>, f: <span class="kw-2">&amp;mut </span>std::fmt::Formatter&lt;<span class="lifetime">&#39;_</span>&gt;) -&gt; std::fmt::Result {
+<span class="kw">impl</span> <span class="ident">std::fmt::Display</span> <span class="kw">for</span> <span class="ident">SimulationDateTime</span> {
+    <span class="kw">fn</span> <span class="ident">fmt</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">f</span>: <span class="kw-2">&amp;mut</span> <span class="ident">std::fmt::Formatter</span><span class="op">&lt;</span><span class="lifetime">&#39;_</span><span class="op">&gt;</span>) -&gt; <span class="ident">std::fmt::Result</span> {
         <span class="macro">write!</span>(
-            f,
+            <span class="ident">f</span>,
             <span class="string">&quot;{}-{:02}-{:02}-{:02}@{:02}:{:02}:{:02.4}&quot;</span>,
-            <span class="kw-2">&amp;</span><span class="self">self</span>.year, <span class="kw-2">&amp;</span><span class="self">self</span>.month, <span class="kw-2">&amp;</span><span class="self">self</span>.week, <span class="kw-2">&amp;</span><span class="self">self</span>.day, <span class="kw-2">&amp;</span><span class="self">self</span>.hour, <span class="kw-2">&amp;</span><span class="self">self</span>.minute, <span class="kw-2">&amp;</span><span class="self">self</span>.second
+            <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">year</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">month</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">week</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">day</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">hour</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">minute</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">second</span>
         )
     }
 }
 
-<span class="kw">impl </span>std::fmt::Debug <span class="kw">for </span>SimulationDateTime {
-    <span class="kw">fn </span>fmt(<span class="kw-2">&amp;</span><span class="self">self</span>, f: <span class="kw-2">&amp;mut </span>std::fmt::Formatter&lt;<span class="lifetime">&#39;_</span>&gt;) -&gt; std::fmt::Result {
-        f.debug_struct(<span class="string">&quot;SimulationDateTime&quot;</span>)
-            .field(<span class="string">&quot;year&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.year)
-            .field(<span class="string">&quot;month&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.month)
-            .field(<span class="string">&quot;week&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.week)
-            .field(<span class="string">&quot;month&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.month)
-            .field(<span class="string">&quot;day&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.day)
-            .field(<span class="string">&quot;hour&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.hour)
-            .field(<span class="string">&quot;minute&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.minute)
-            .field(<span class="string">&quot;second&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.second)
-            .finish()
+<span class="kw">impl</span> <span class="ident">std::fmt::Debug</span> <span class="kw">for</span> <span class="ident">SimulationDateTime</span> {
+    <span class="kw">fn</span> <span class="ident">fmt</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">f</span>: <span class="kw-2">&amp;mut</span> <span class="ident">std::fmt::Formatter</span><span class="op">&lt;</span><span class="lifetime">&#39;_</span><span class="op">&gt;</span>) -&gt; <span class="ident">std::fmt::Result</span> {
+        <span class="ident">f</span>.<span class="ident">debug_struct</span>(<span class="string">&quot;SimulationDateTime&quot;</span>)
+            .<span class="ident">field</span>(<span class="string">&quot;year&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">year</span>)
+            .<span class="ident">field</span>(<span class="string">&quot;month&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">month</span>)
+            .<span class="ident">field</span>(<span class="string">&quot;week&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">week</span>)
+            .<span class="ident">field</span>(<span class="string">&quot;month&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">month</span>)
+            .<span class="ident">field</span>(<span class="string">&quot;day&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">day</span>)
+            .<span class="ident">field</span>(<span class="string">&quot;hour&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">hour</span>)
+            .<span class="ident">field</span>(<span class="string">&quot;minute&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">minute</span>)
+            .<span class="ident">field</span>(<span class="string">&quot;second&quot;</span>, <span class="kw-2">&amp;</span><span class="self">self</span>.<span class="ident">second</span>)
+            .<span class="ident">finish</span>()
     }
 }
 
-<span class="attribute">#[cfg(test)]
-</span><span class="kw">mod </span>tests {
-    <span class="kw">use </span><span class="kw">super</span>::SimulationClock;
-    <span class="kw">use </span>std::time::Duration;
-    <span class="kw">use </span>tracing_test::traced_test;
+<span class="attribute">#[<span class="ident">cfg</span>(<span class="ident">test</span>)]</span>
+<span class="kw">mod</span> <span class="ident">tests</span> {
+    <span class="kw">use</span> <span class="ident"><span class="kw">super</span>::SimulationClock</span>;
+    <span class="kw">use</span> <span class="ident">std::time::Duration</span>;
+    <span class="kw">use</span> <span class="ident">tracing_test::traced_test</span>;
 
-    <span class="attribute">#[test]
-    #[traced_test]
-    </span><span class="kw">fn </span>clock_test() {
-        <span class="kw">let </span><span class="kw-2">mut </span>clock = SimulationClock::default();
-        <span class="kw">let </span><span class="kw-2">mut </span>seconds_since_startup = Duration::default();
-        <span class="kw">let </span><span class="kw-2">mut </span>seconds_since_update = Duration::default();
-        <span class="kw">while </span>seconds_since_startup.as_secs_f64() &lt; <span class="number">20.0 </span>{
-            seconds_since_startup += Duration::from_secs_f64(<span class="number">1.0 </span>/ <span class="number">60.0</span>);
-            seconds_since_update += Duration::from_secs_f64(<span class="number">1.0 </span>/ <span class="number">60.0</span>);
-            clock.tick(seconds_since_update);
+    <span class="attribute">#[<span class="ident">test</span>]</span>
+    <span class="attribute">#[<span class="ident">traced_test</span>]</span>
+    <span class="kw">fn</span> <span class="ident">clock_test</span>() {
+        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">clock</span> <span class="op">=</span> <span class="ident">SimulationClock::default</span>();
+        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">seconds_since_startup</span> <span class="op">=</span> <span class="ident">Duration::default</span>();
+        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">seconds_since_update</span> <span class="op">=</span> <span class="ident">Duration::default</span>();
+        <span class="kw">while</span> <span class="ident">seconds_since_startup</span>.<span class="ident">as_secs_f64</span>() <span class="op">&lt;</span> <span class="number">20.0</span> {
+            <span class="ident">seconds_since_startup</span> <span class="op">+</span><span class="op">=</span> <span class="ident">Duration::from_secs_f64</span>(<span class="number">1.0</span> <span class="op">/</span> <span class="number">60.0</span>);
+            <span class="ident">seconds_since_update</span> <span class="op">+</span><span class="op">=</span> <span class="ident">Duration::from_secs_f64</span>(<span class="number">1.0</span> <span class="op">/</span> <span class="number">60.0</span>);
+            <span class="ident">clock</span>.<span class="ident">tick</span>(<span class="ident">seconds_since_update</span>);
         }
-        clock.enable_turn_mode();
-        <span class="kw">while </span>seconds_since_startup.as_secs_f64() &lt; <span class="number">40.0 </span>{
-            seconds_since_startup += Duration::from_secs_f64(<span class="number">1.0 </span>/ <span class="number">60.0</span>);
-            seconds_since_update += Duration::from_secs_f64(<span class="number">1.0 </span>/ <span class="number">60.0</span>);
-            clock.tick(seconds_since_update);
-            <span class="kw">if </span>clock.turn_complete() {
-                clock.advance_turn();
+        <span class="ident">clock</span>.<span class="ident">enable_turn_mode</span>();
+        <span class="kw">while</span> <span class="ident">seconds_since_startup</span>.<span class="ident">as_secs_f64</span>() <span class="op">&lt;</span> <span class="number">40.0</span> {
+            <span class="ident">seconds_since_startup</span> <span class="op">+</span><span class="op">=</span> <span class="ident">Duration::from_secs_f64</span>(<span class="number">1.0</span> <span class="op">/</span> <span class="number">60.0</span>);
+            <span class="ident">seconds_since_update</span> <span class="op">+</span><span class="op">=</span> <span class="ident">Duration::from_secs_f64</span>(<span class="number">1.0</span> <span class="op">/</span> <span class="number">60.0</span>);
+            <span class="ident">clock</span>.<span class="ident">tick</span>(<span class="ident">seconds_since_update</span>);
+            <span class="kw">if</span> <span class="ident">clock</span>.<span class="ident">turn_complete</span>() {
+                <span class="ident">clock</span>.<span class="ident">advance_turn</span>();
             }
         }
-        clock.disable_turn_mode();
-        <span class="kw">while </span>seconds_since_startup.as_secs_f64() &lt; <span class="number">60.0 </span>{
-            seconds_since_startup += Duration::from_secs_f64(<span class="number">1.0 </span>/ <span class="number">60.0</span>);
-            seconds_since_update += Duration::from_secs_f64(<span class="number">1.0 </span>/ <span class="number">60.0</span>);
-            clock.tick(seconds_since_update);
+        <span class="ident">clock</span>.<span class="ident">disable_turn_mode</span>();
+        <span class="kw">while</span> <span class="ident">seconds_since_startup</span>.<span class="ident">as_secs_f64</span>() <span class="op">&lt;</span> <span class="number">60.0</span> {
+            <span class="ident">seconds_since_startup</span> <span class="op">+</span><span class="op">=</span> <span class="ident">Duration::from_secs_f64</span>(<span class="number">1.0</span> <span class="op">/</span> <span class="number">60.0</span>);
+            <span class="ident">seconds_since_update</span> <span class="op">+</span><span class="op">=</span> <span class="ident">Duration::from_secs_f64</span>(<span class="number">1.0</span> <span class="op">/</span> <span class="number">60.0</span>);
+            <span class="ident">clock</span>.<span class="ident">tick</span>(<span class="ident">seconds_since_update</span>);
         }
     }
 }
 </code></pre></div>
-</section></div></main><div id="rustdoc-vars" data-root-path="../../" data-current-crate="metriclock" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.65.0-beta.4 (a31705549 2022-10-21)" ></div></body></html>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../" data-current-crate="metriclock" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.64.0 (a55dd71d5 2022-09-19)" ></div></body></html>
